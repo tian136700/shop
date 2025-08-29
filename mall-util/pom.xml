@@ -8,7 +8,7 @@
     </parent>
 
     <artifactId>mall-util</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>mall-util</name>
     <url>http://maven.apache.org</url>
@@ -16,7 +16,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
+    <description>
+        所有工具工程管理
+    </description>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>

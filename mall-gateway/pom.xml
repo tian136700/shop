@@ -8,11 +8,13 @@
     </parent>
 
     <artifactId>mall-gateway</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>mall-gatrway</name>
     <url>http://maven.apache.org</url>
-
+    <description>
+        管理所有微服务网关
+    </description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>

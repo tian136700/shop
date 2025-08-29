@@ -8,11 +8,13 @@
     </parent>
 
     <artifactId>mall-web</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>mall-web</name>
     <url>http://maven.apache.org</url>
-
+    <description>
+        管理涉及到页面渲染的工程
+    </description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>

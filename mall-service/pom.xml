@@ -8,21 +8,53 @@
     </parent>
 
     <artifactId>mall-service</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>mall-service</name>
     <url>http://maven.apache.org</url>
-
+    <modules>
+        <module>mall-goods-service</module>
+    </modules>
+    <description>
+        存储所有微服务工程
+    </description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
+        <!-- Spring Boot Starter Web -->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        
+        <!-- Spring Boot Starter Test -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        
+        <!-- JUnit 5 for Java 17 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+        
+        <!--        工具包依赖-->
+        <dependency>
+            <groupId>com.gupaoedu</groupId>
+            <artifactId>mall-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!--        jar包依赖-->
+        <dependency>
+            <groupId>com.gupaoedu</groupId>
+            <artifactId>mall-service-dependency</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>

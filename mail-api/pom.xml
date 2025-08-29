@@ -8,8 +8,10 @@
     </parent>
 
     <artifactId>mail-api</artifactId>
-    <packaging>jar</packaging>
-
+    <packaging>pom</packaging>
+    <description>
+        所有数据库表对应的Bean和Feign接口
+    </description>
     <name>mail-api</name>
     <url>http://maven.apache.org</url>
 
@@ -23,6 +25,13 @@
             <artifactId>junit</artifactId>
             <version>3.8.1</version>
             <scope>test</scope>
+        </dependency>
+        <!--MyBatis Plus-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.5.4.1</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>

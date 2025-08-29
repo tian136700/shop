@@ -1,4 +1,4 @@
-package com.gupaoedu.vip.mall.goods;
+package com.gupaoedu.vip.mall.goods.model;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
