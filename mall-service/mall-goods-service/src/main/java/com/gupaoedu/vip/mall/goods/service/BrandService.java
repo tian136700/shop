@@ -1,8 +1,9 @@
 package com.gupaoedu.vip.mall.goods.service;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.gupaoedu.vip.mall.goods.entity.Brand;
-import org.springframework.data.domain.Page;
+
 
 import java.util.List;
 
@@ -31,6 +32,6 @@ public interface BrandService extends IService<Brand> {
      */
     List<Brand> queryList(Brand brand);
 
-    Page<Brand> queryList(Brand brand, Long currentPage,Long size);
+    Page<Brand> queryPageList(Brand brand, Long page, Long size);
 }
 //开发流程1.先写接口2.impl文件去实现接口
