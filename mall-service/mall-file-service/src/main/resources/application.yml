@@ -1,0 +1,44 @@
+# =============================================
+# 咕泡云商城 - 商品服务配置文件
+# 文件名: application.yml
+# 说明: Spring Boot主配置文件
+# =============================================
+
+server:
+  port: 8089
+
+spring:
+  application:
+    name: mall-file
+  # Nacos配置
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: localhost:8848
+        # 禁用导入检查
+        import-check:
+          enabled: false
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        register-enabled: true
+        watch-delay: 5000
+# ceph配置
+ceph:
+  username: cephtester:subtester  #Ceph配置 主用户名：子用户名
+  password: gupao #秘钥
+  authUrl: http://172.16.37.13:7480//auth/1.0 #接口访问路径
+  defaultContainerName: user_datainfo #默认容器名字
+#图片路径
+cephurl: http://localhost:8089/file/download/
+
+# 日志配置
+logging:
+  level:
+    com.gupaoedu.vip.mall: debug
+    com.baomidou.mybatisplus: debug
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
